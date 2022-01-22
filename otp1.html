@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .op{
+            width:50%;
+            height: 400px;
+            margin-top: 7%;
+            margin-left: 25%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            position: fixed;
+        }
+        .op>h2{
+            color: orangered;
+            font-family: sans-serif;
+            margin-left: 15%;
+            position: relative;top:3em;
+        }
+        .otp1{
+            width:25px;
+            height: 25px;
+            text-align: center;
+        }
+        .otp2{
+            width:25px;
+            height: 25px;
+            text-align: center;
+        }
+        .otp3{
+            width:25px;
+            height: 25px;
+            text-align: center;
+        }
+        .otp4{
+            width:25px;
+            height: 25px;
+            text-align: center;
+        }
+        .otp{
+            text-align: center;
+            margin-top: 10em;
+        }
+        .signin{
+            width:30%;
+            height:35px;
+            border:0;
+            background-color: orangered;
+            color:white;
+            font-size: 22px;
+            margin-left: 35%;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="op">
+    <h2>Please Enter The OTP Sent to Your Mail </h2>
+    <div class="otp">
+      <input type="password" class="otp1" maxlength="1">
+      <input type="password" class="otp2" maxlength="1">
+      <input type="password" class="otp3" maxlength="1">
+      <input type="password" class="otp4" maxlength="1">
+    </div>
+   <button class="signin">pay</button>
+    </div>
+</body>
+</html>
+<script>
+document.querySelector(".signin").addEventListener("click",function(event1){
+    event1.preventDefault()
+    var otp1=document.querySelector(".otp1").value;
+    var otp2=document.querySelector(".otp2").value;
+    var otp3=document.querySelector(".otp3").value;
+    var otp4=document.querySelector(".otp4").value;
+if(otp1=="1" && otp2=="2" && otp3=="3" && otp4=="4"){
+    alert("success your order will be delivered within 4 days")
+    window.location.href="landing.html"
+}
+else{
+    alert("wrong otp")
+}
+   })
+</script>

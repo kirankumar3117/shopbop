@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            height:35px;
+            background-color: #FAF9F9;
+        }
+        .rotate{
+            transform: rotate(270deg);
+            margin-left:35%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .area{
+            display: flex;
+            width:4%;
+            margin-left:12%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .ate{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px;
+        }
+        .lan{
+            display: flex;
+            width:3%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .rotate1{
+            transform: rotate(270deg);
+            margin-left:45%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .lte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cur{
+            display: flex;
+            width:4%;
+            margin-left:0.4%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .csy{
+            margin-top: 0.1em;
+            font-weight: bold;
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .rotate2{
+            transform: rotate(270deg);
+            margin-left:30%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .fde{
+            font-family: sans-serif;
+            font-size: 11px;
+            margin-left: 15%;
+            margin-top: -0.2em;
+            cursor: pointer;
+            width:19%;
+        }
+        .sign{
+            display: flex;
+            width:9%;
+            margin-left: 15.3%;
+            margin-top: -0.3em;
+            cursor: pointer;
+        }
+        .sign>p{
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .rotate3{
+            transform: rotate(270deg);
+            margin-left:10%;
+            font-size: 13px;
+            margin-top: 0.4em;
+        }
+        .wish{
+            margin-left: 0.5%;
+            width:2%;
+        }
+        .lov{
+            color: rgb(252,177,138);
+            font-size: 25px;
+            margin-top: -0.2em;
+        }
+        :hover.lov{
+            font-size: 29px;
+            cursor: pointer;    
+        }
+        .bag{
+            display: flex;
+            margin-left: 1%;
+            font-size: 21px;
+            width:2%;
+        }
+        :hover.bag{
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bc{
+            margin-left: -0.3em;
+            color: rgb(182, 177, 177);
+            font-family: sans-serif;
+            margin-top: 0.3em;
+        }
+        .head{
+            width:100%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 1.7%;
+            /* position: fixed; */
+        }
+        .ihead{
+           width:13.8%;
+           height: auto;
+           color: black;
+       }
+        .select{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 12.2px;
+            margin-left: 19%;
+            margin-top: 1%;
+            height: 32px
+        }
+       .wn{
+           width:9%;
+           /* text-align: center; */
+       }
+       .of{
+            width:10%;
+           text-align: center;
+       }
+       .ds{
+           width:11%;
+           text-align: center;
+       }
+       .cl{
+           width:6%;
+           text-align: center;
+       }
+       .act{
+           width:8%;
+           text-align: center;
+       }
+       .sho{
+           width:4.5%;
+           text-align: center;
+       }
+       .bgs{
+           width:6%;
+           text-align: center;
+       }
+       .accs{
+           width:10%;
+           text-align: center;
+       }
+       .mn{
+           width:4.7%;
+           text-align: center;
+       }
+       .sl{
+           width:3.2%;
+           text-align: center;
+       }
+       .ser{
+           font-size: small;
+           color: rgb(92, 89, 89);
+           font-weight: 100 ;
+           margin-top: 0.8em;
+           margin-left: 1.2em;
+       }
+       .select>div:hover{
+          cursor: pointer;
+           font-weight:bold;
+           font-size: 12.5px;
+           color: black;
+            transition: all 0.2s ease-out ;
+       }
+       .hov{
+        visibility: hidden;
+           width:80%;
+           margin-left: 10%;
+           height: 0.1em;
+           background-color:orangered;
+           margin-top:-1em;
+       }
+
+
+
+
+
+
+       .bimg{
+          width:103%;
+          height: 600px;
+          overflow: hidden;
+          background-image: url("https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/lookbooks/2022/2022_01/sb_20220115_desktop_LB_paige_02_1-0.jpg");
+          margin-top: 0.7em;
+          /* background-size: 150px; */
+          background-size: 100%;
+          background-position-y:-5em;
+          margin-left: -0.5em;
+       }
+       .himg1{  
+           width:25%;
+           height: 78.8%;
+           border:14px solid white;
+           margin-top: 6%;
+           margin-left: 5.6%;
+           transform: rotate(359.5deg);
+           background-image: url("https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+           transition: 3s;
+
+
+           /* animation-name: image;
+           animation-duration:1s;
+           animation-play-state: running;
+           animation-timing-function: ease-in-out;
+           animation-fill-mode: forwards;
+           animation-iteration-count: infinite;
+           animation-direction: alternate-reverse; */
+
+       }
+       /* @keyframes image{
+           0%{
+               background-image: url("https://www.pexels.com/photo/women-s-white-and-black-striped-dress-shirt-1844012/");
+           }
+           20%{
+               background-image: url("https://www.pexels.com/photo/woman-holding-her-hat-while-holding-her-camera-2085118/");
+           }
+           30%{
+               background-image: url("https://www.pexels.com/photo/woman-wearing-green-fur-jacket-1040173/");
+           }
+           50%{
+               background-image: url("https://www.pexels.com/photo/woman-in-maroon-buttoned-coat-wearing-black-hat-952629/");
+           }
+           100%{
+               background-image: url("https://www.pexels.com/photo/photo-of-a-woman-wearing-gingham-dress-859192/");
+           }
+       } */
+       /* .ihimg1{
+        width: 100%;
+        height: 100%;
+       }    */
+       .ihtext{
+           width:21%;
+           margin-left: 38%;
+           margin-top: -28%;
+           text-align: center;
+       }    
+       .ihtext>p{
+           font-weight: bold;
+           font-family: sans-serif;
+       }
+       .ihtext>h1{
+           font-weight:800;
+           font-family: sans-serif;
+           font-size: 45px;
+           margin-top: -0.35em;
+       }
+       #ihp1{
+        line-height: 27px;
+        font-weight: 100;
+        font-size: 17px;
+        margin-top: -1em;
+        font-family: sans-serif;
+       }
+       .ihbotton{
+           border:0;
+           text-align: center;
+           width:65%;
+           height: 52px;
+           font-weight: bold;
+           color: white;
+           background-color: orangered;
+           font-family: sans-serif;
+       }
+       :hover.ihbotton{
+           background-color: rgb(252, 127, 82);
+       }
+       
+       .what{
+           display: flex;
+           width:80%;
+           margin-left: 10%;
+           margin-top: 1em;
+       }
+       .whats{
+           font-size: 25px;
+       }
+       .shopall{
+           font-size: 15px;
+           color: red;
+           text-decoration: underline;
+           margin-left: 70%;
+           margin-top: 2em;
+       }
+       .cwn{
+           width: 80%;
+           margin-left: 10%;
+           height: 480px;
+           overflow:auto;
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-gap: 5px;
+       }
+
+
+
+
+
+       .pname{
+           font-size: 12.5px;
+           font-family: sans-serif;
+           font-weight: bold;
+           width:90%;
+           height:15px;
+           text-align: center;
+           overflow: hidden;
+       }
+       .pcat{
+           width:90%;
+           height:15px;
+           overflow: hidden;
+           color: rgb(110, 108, 108);
+           font-family: sans-serif;
+           font-size: 12px;
+           text-align: center;
+           margin-top: -0.4em;
+       }
+       .dprice{
+           width:90%;
+           height: 14px;;
+           margin-top: -0.8em;
+           text-align: center;
+           text-decoration: line-through;
+           color: red;
+           cursor: pointer;
+       }
+      .pprice{
+          display: flex;
+          width: 90%;
+          text-align: center;
+          cursor: pointer;
+      }
+      .mywish{
+          margin-left: 20%;
+          cursor: pointer;
+          border: 1px solid pink;
+          background-color: plum;
+          
+      }
+      .myprice{
+          margin-left:30%;
+          cursor: pointer;
+      }
+      .addproduct{
+          width:91%;
+          margin-top: 0.3em;
+          background-color: orangered;
+          color: white;
+          border: 0;
+          height:20px;
+          cursor: pointer;
+      }
+      .final{
+          width:80%;
+          margin-left: 10%;
+          height: 300px;
+          /* border: 1px solid black; */
+          margin-top: 2em;
+          display: flex;
+          font-family: sans-serif;
+      }
+      .final>div{
+          width:20%;
+          /* border: 1px solid black; */
+      }
+      .servive>p{
+          font-size: small;
+      }
+      .servive>h6{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .servive>p:hover{
+          font-weight: bold;
+      }
+      .info>p{
+          font-size: small;
+      }
+      .info>h6{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .info>p:hover{
+          font-weight: bold;
+      }
+      .personal>p{
+          font-size: small;
+      }
+      .personal>h6{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .personal>p:hover{
+          font-weight: bold;
+      }
+      .connect>p{
+          font-size: small;
+      }
+      .connect>h6{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .connect>p:hover{
+          font-weight: bold;
+      }
+      .location>p{
+          font-size: small;
+      }
+      .location>h6{
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .location>p:hover{
+          font-weight: bold;
+      }
+      .seventy{
+          margin-top: 2em;
+      }
+      .beauty{
+          text-align: center;
+          background-color: rgba(22, 14, 2, 0.699);
+      }
+    </style>
+</head>
+<body>
+<div class="nav">
+<div class="area">
+    <i style="font-size:20px;" class="fa" >&#xf041;</i>
+    <div class="ate">IN</div>
+    <div class="rotate">&#10094;</div>
+</div>
+<div class="lan">
+   <div class="lte">
+    EN
+   </div>
+   <div class="rotate1">&#10094;</div>
+</div>
+<div class="cur">
+    <div class="csy">
+        &#8377;
+    </div>
+<div class="cte">INR</div>
+<div class="rotate2">&#10094;</div>
+</div>
+<div class="fde">
+   <p>FREE express intenational deliver + EASY returns</p>
+</div>
+<div class="sign" onclick="window.location.href='login.html'">
+<p>Sign In / Register</p>
+<div class="rotate3">&#10094;</div>
+</div>
+<div class="wish" onclick="window.location.href='wishlist.html'">
+<div class="lov">
+    &#10084;
+</div>
+</div>
+<div class="bag" onclick="window.location.href='addtobag.html'">
+    <i class="fas fa-shopping-bag"></i>
+</div>
+<p class="bc"></p>
+</div>
+<div class="head">
+    <img class="ihead" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop">
+</div>
+<div class="select">
+    <div class="wn" onclick="window.location.href='whatsnew.html'"> 
+        <p>WHAT'S NEW</p>
+        <div class="hov"></div>
+    </div>
+    <div class="of" onclick="window.location.href='ourfavorite.html'">
+        <p>OUR FAVORITES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="ds" onclick="window.location.href='whatsnew.html'">
+        <p>DESIGNERS</p>
+        <div class="hov"></div>
+    </div>
+    <div class="cl" onclick="window.location.href='clothing.html'">
+        <p>CLOTHING</p>
+        <div class="hov"></div>
+    </div>
+    <div class="act" onclick="window.location.href='active.html'">
+        <p>ACTIVE</p>
+        <div class="hov"></div>
+    </div>
+    <div class="sho" onclick="window.location.href='shoes.html'">
+        <p>SHOES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="bgs" onclick="window.location.href='bags.html'">
+        <p>BAGS</p>
+        <div class="hov"></div>
+    </div>
+    <div class="accs" onclick="window.location.href='whatsnew.html'">
+        <p>ACCESSORIES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="mn" onclick="window.location.href='men.html'">
+        <p>MEN</p>
+        <div class="hov"></div>
+    </div>
+    <div class="sl">
+        <P>SALE</P>
+        <div class="hov"></div>
+    </div>
+    <div class="ser">
+        <i class="fas fa-search"></i>
+    </div>
+</div>
+
+
+
+
+<div class="bimg" onclick="window.location.href='whatsnew.html'">
+    <div class="himg1">
+     <!-- <img class="ihimg1" src="" alt=""> -->
+    </div>
+    <div class="ihtext">
+     <p>THE LATEST FROM</p>
+     <h1>PAIGE</h1>
+     <p id="ihp1">Cozy swteater, stand out jumpsuits & of course, the label's fan-favorite jeans.</p>
+     <button class="ihbotton">Explore the story</button>
+    </div>
+</div>
+
+
+<div class="what">
+    <p class="whats">Whats New....</p>
+    <p class="shopall" onclick="window.location.href='whatsnew.html'">shop all</p>
+</div>
+
+<div class="cwn">
+<!-- 
+            <div class="wncimg">
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/staud/staud3109329563/staud3109329563_1642114246123_2-0._SH20_QL90_UY365_.jpg" alt="">
+                <p class="pname">STAUD</p>
+                <p class="pcat">Mini Milla Dress</p>
+                <div class="dprice"></div>
+                <div class="pprice"><span class="myprice">&#8377;</span>6464565<span class="mywish"> &#10084;</span></div>
+                <button class="addproduct" onclick="addchange()">Add To Cart</button>
+            </div> -->
+
+</div>
+
+<div class="seventy">
+    <img src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_01/sb_20220114_desktop_miniM1_gmd._FMwebp_UX1500_.jpg" alt="70%off" class="sevenimg">
+</div>
+
+<div class="beauty">
+    <img src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_01/sb_20220121_desktop_P1_winterdenim._FMwebp_UX992_.jpg" alt="beauty">
+</div>
+<div class="final">
+    <div class="servive">
+        <h6>SERVICES</h6>
+        <P>Customer Service</P>
+        <P>Gift Certificates</P>
+        <P>Give Us Your Feedback</P>
+        <!-- <P>Customer Service</P> -->
+    </div>
+    <div class="info">
+        <h6>INFORMATION</h6>
+        <P>About Us</P>
+        <P>Careers</P>
+        <P>Affiliate Program</P>
+    </div>
+    <div class="personal">
+        <h6>PERSONALIZE</h6>
+        <P>Account</P>
+        <P>My Loyalty</P>
+        <P>My loves</P>
+        <P>My wish list</P>
+        <P>My Designers</P>
+        <P>My Riviews</P>
+    </div>
+    <div class="connect">
+        <h6>CONNECT</h6>
+        <P>Mobile</P>
+        <P>Instragram</P>
+        <P>Facebook</P>
+        <P>Pinterest</P>
+        <P>Weibo</P>
+        <P>Sign up for Shopbop emails</P>
+    </div>
+    <div class="location">
+        <h6>LOCATION</h6>
+        <P>Aland Island (change)</P>
+        <P>FREE express international</P>
+        <P>delivery</P>
+        <P>+ easy returns</P>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    var m=JSON.parse(localStorage.getItem("items"));
+
+
+    
+var cartitems=JSON.parse(localStorage.getItem("cart")) || [];
+var wishlist=JSON.parse(localStorage.getItem("wish")) || [];
+
+
+
+
+var l=m.map(function(ele){
+
+
+
+     var main=document.createElement("div")
+     main.setAttribute("class","wncimg")
+
+     var bname=document.createElement("p")
+     bname.setAttribute("class","pname")
+     bname.textContent=ele.name;
+
+
+     var bcat=document.createElement("p")
+     bcat.setAttribute("class","pcat")
+     bcat.textContent=ele.type;
+
+     var dprice=document.createElement("div");
+     dprice.setAttribute("class","dprice")
+     dprice.textContent=ele.discount;
+
+     var aprice=document.createElement("div");
+     aprice.setAttribute("class","pprice")
+   
+
+     var rsym=document.createElement("span");
+     rsym.setAttribute("class","myprice");
+
+     rsym.textContent="$";
+
+     var actualprice=ele.price;
+
+     var fsym=document.createElement("span");
+     fsym.setAttribute("class","mywish");
+
+     fsym.textContent="love"
+
+     fsym.addEventListener("click",function(){
+         wishlist.push(ele)
+         localStorage.setItem("wish",JSON.stringify(wishlist));
+     })
+
+    
+    var button=document.createElement("button");
+    button.setAttribute("class","addproduct");
+    
+    button.textContent="Add To Cart"
+
+    button.addEventListener("click",function(){
+       addcart(ele)
+    })
+
+    var image=document.createElement("img");
+    image.setAttribute("src",ele.image)
+
+
+     main.append(image,bname,bcat,dprice)
+
+
+     aprice.append(rsym,actualprice,fsym)
+
+     main.append(aprice,button)
+
+     document.querySelector(".cwn").append(main)
+
+
+
+    
+
+
+    })
+
+   function addcart(ele){
+       alert("Item added to cart")
+        cartitems.push(ele)
+        localStorage.setItem("cart",JSON.stringify(cartitems))
+        // document.querySelector(".addproduct").style.backgroundColor="green"
+
+   }
+   
+   var lol=JSON.parse(localStorage.getItem("cart"))
+
+var bc=document.querySelector(".bc").textContent=lol.length;
+
+</script>

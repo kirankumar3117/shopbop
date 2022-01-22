@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            height:35px;
+            background-color: #FAF9F9;
+        }
+        .rotate{
+            transform: rotate(270deg);
+            margin-left:35%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .area{
+            display: flex;
+            width:4%;
+            margin-left:12%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .ate{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px;
+        }
+        .lan{
+            display: flex;
+            width:3%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .rotate1{
+            transform: rotate(270deg);
+            margin-left:45%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .lte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cur{
+            display: flex;
+            width:4%;
+            margin-left:0.4%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .csy{
+            margin-top: 0.1em;
+            font-weight: bold;
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .rotate2{
+            transform: rotate(270deg);
+            margin-left:30%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .fde{
+            font-family: sans-serif;
+            font-size: 11px;
+            margin-left: 15%;
+            margin-top: -0.2em;
+            cursor: pointer;
+            width:19%;
+        }
+        .sign{
+            display: flex;
+            width:9%;
+            margin-left: 15.3%;
+            margin-top: -0.3em;
+            cursor: pointer;
+        }
+        .sign>p{
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .rotate3{
+            transform: rotate(270deg);
+            margin-left:10%;
+            font-size: 13px;
+            margin-top: 0.4em;
+        }
+        .wish{
+            margin-left: 0.5%;
+            width:2%;
+        }
+        .lov{
+            color: rgb(252,177,138);
+            font-size: 25px;
+            margin-top: -0.2em;
+        }
+        :hover.lov{
+            font-size: 29px;
+            cursor: pointer;    
+        }
+        .bag{
+            display: flex;
+            margin-left: 1%;
+            font-size: 21px;
+            width:2%;
+        }
+        :hover.bag{
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bc{
+            margin-left: -0.3em;
+            color: rgb(182, 177, 177);
+            font-family: sans-serif;
+            margin-top: 0.3em;
+        }
+        .head{
+            width:100%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 1.7%;
+            /* position: fixed; */
+        }
+        .ihead{
+           width:13.8%;
+           height: auto;
+           color: black;
+       }
+        .select{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 12.2px;
+            margin-left: 19%;
+            margin-top: 1%;
+            height: 32px
+        }
+       .wn{
+           width:9%;
+           /* text-align: center; */
+       }
+       .of{
+            width:10%;
+           text-align: center;
+       }
+       .ds{
+           width:11%;
+           text-align: center;
+       }
+       .cl{
+           width:6%;
+           text-align: center;
+       }
+       .act{
+           width:8%;
+           text-align: center;
+       }
+       .sho{
+           width:4.5%;
+           text-align: center;
+       }
+       .bgs{
+           width:6%;
+           text-align: center;
+       }
+       .accs{
+           width:10%;
+           text-align: center;
+       }
+       .mn{
+           width:4.7%;
+           text-align: center;
+       }
+       .sl{
+           width:3.2%;
+           text-align: center;
+       }
+       .ser{
+           font-size: small;
+           color: rgb(92, 89, 89);
+           font-weight: 100 ;
+           margin-top: 0.8em;
+           margin-left: 1.2em;
+       }
+       .select>div:hover{
+          cursor: pointer;
+           font-weight:bold;
+           font-size: 12.5px;
+           color: black;
+            transition: all 0.2s ease-out ;
+       }
+       .hov{
+        visibility: hidden;
+           width:80%;
+           margin-left: 10%;
+           height: 0.1em;
+           background-color:orangered;
+           margin-top:-1em;
+       }
+
+
+
+
+
+
+       .headwn{
+           width:79%;
+           margin-left: 12%;
+           font-family: sans-serif;
+           
+       }
+       .headwn>div{
+            width:100%;
+            height: 0.2px;
+            background-color: rgb(189, 182, 182);
+            margin-top: -0.4em;
+       }
+
+
+
+       .cwn{
+           width: 68%;;
+           margin-left:23%;
+           height: 1200px;
+           overflow:auto;
+           margin-top: -7.8em;
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-gap: 5px;
+       }
+       .pname{
+           font-size: 12.5px;
+           font-family: sans-serif;
+           font-weight: bold;
+           width:90%;
+           height:15px;
+           text-align: center;
+           overflow: hidden;
+       }
+       .pcat{
+           width:90%;
+           height:15px;
+           overflow: hidden;
+           color: rgb(110, 108, 108);
+           font-family: sans-serif;
+           font-size: 12px;
+           text-align: center;
+           margin-top: -0.4em;
+       }
+       .dprice{
+           width:90%;
+           height: 14px;;
+           margin-top: -0.8em;
+           text-align: center;
+           text-decoration: line-through;
+           color: red;
+           cursor: pointer;
+       }
+      .pprice{
+          display: flex;
+          width: 90%;
+          text-align: center;
+          cursor: pointer;
+      }
+      .mywish{
+          margin-left: 20%;
+          cursor: pointer;
+          border: 1px solid pink;
+          background-color: plum;
+          
+      }
+      .myprice{
+          margin-left:30%;
+          cursor: pointer;
+      }
+      .addproduct{
+          width:91%;
+          margin-top: 0.3em;
+          background-color: orangered;
+          color: white;
+          border: 0;
+          height:20px;
+          cursor: pointer;
+      }
+
+
+
+      #sort{
+          /* border: 1px solid black; */
+          width:8%;
+          margin-left: 13%;
+          text-align: center;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .sortingtech{
+          visibility: hidden;
+      }
+      #sort:hover .sortingtech{
+        visibility: visible;
+    }
+    .sortingtech>p:hover{
+        font-weight: bold;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="area">
+            <i style="font-size:20px;" class="fa" >&#xf041;</i>
+            <div class="ate">IN</div>
+            <div class="rotate">&#10094;</div>
+        </div>
+        <div class="lan">
+           <div class="lte">
+            EN
+           </div>
+           <div class="rotate1">&#10094;</div>
+        </div>
+        <div class="cur">
+            <div class="csy">
+                &#8377;
+            </div>
+        <div class="cte">INR</div>
+        <div class="rotate2">&#10094;</div>
+        </div>
+        <div class="fde">
+           <p>FREE express intenational deliver + EASY returns</p>
+        </div>
+        <div class="sign" onclick="window.location.href='login.html'">
+        <p>Sign In / Register</p>
+        <div class="rotate3">&#10094;</div>
+        </div>
+        <div class="wish" onclick="window.location.href='wishlist.html'">
+        <div class="lov">
+            &#10084;
+        </div>
+        </div>
+        <div class="bag" onclick="window.location.href='addtobag.html'">
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+        <p class="bc"></p>
+        </div>
+        <div class="head">
+            <img class="ihead" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop">
+        </div>
+        <div class="select">
+            <div class="wn" onclick="window.location.href='whatsnew.html'"> 
+                <p>WHAT'S NEW</p>
+                <div class="hov"></div>
+            </div>
+            <div class="of" onclick="window.location.href='ourfavorite.html'">
+                <p>OUR FAVORITES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="ds" onclick="window.location.href='whatsnew.html'">
+                <p>DESIGNERS</p>
+                <div class="hov"></div>
+            </div>
+            <div class="cl" onclick="window.location.href='clothing.html'">
+                <p>CLOTHING</p>
+                <div class="hov"></div>
+            </div>
+            <div class="act" onclick="window.location.href='active.html'">
+                <p>ACTIVE</p>
+                <div class="hov"></div>
+            </div>
+            <div class="sho" onclick="window.location.href='shoes.html'">
+                <p>SHOES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="bgs" onclick="window.location.href='bags.html'">
+                <p>BAGS</p>
+                <div class="hov"></div>
+            </div>
+            <div class="accs" onclick="window.location.href='whatsnew.html'">
+                <p>ACCESSORIES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="mn" onclick="window.location.href='men.html'">
+                <p>MEN</p>
+                <div class="hov"></div>
+            </div>
+            <div class="sl">
+                <P>SALE</P>
+                <div class="hov"></div>
+            </div>
+            <div class="ser">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        
+
+
+        <div class="headwn">
+            <h3>NEW ON MEN..</h3>
+            <div class="empty"></div>
+        </div>
+        <div  id="sort">
+            sort
+           <div class="sortingtech">
+               <p class="lth">low to high</p>
+               <p class="htl">high to low</p>
+               <p id="non">non</p>
+               <!-- <p class="sortname">name</p> -->
+           </div>
+        </div>
+        <div class="cwn">
+            <!-- <div class="wncimg">
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/staud/staud3109329563/staud3109329563_1642114246123_2-0._SH20_QL90_UY365_.jpg" alt="">
+                <p class="pname">STAUD</p>
+                <p class="pcat">Mini Milla Dress</p>
+                <div class="dprice"></div>
+                <div class="pprice"><span class="myprice">&#8377;</span>6464565<span class="mywish"> &#10084;</span></div>
+                <button class="addproduct" onclick="addchange()">Add To Cart</button>
+            </div> -->
+        </div>
+        
+
+
+</body>
+</html>
+<script>
+//    function addchange(){
+//        document.querySelector(".addproduct").style.backgroundColor="green"
+//        document.querySelector(".addproduct").textContent="Added To Cart"
+//        alert("Product Added To Cart")
+//    }    
+   function mywishchange(){
+       document.querySelector(".mywish").style.color="orange"
+   }
+
+
+
+
+    var m=JSON.parse(localStorage.getItem("menitems"));
+
+
+    
+    var cartitems=JSON.parse(localStorage.getItem("cart")) || [];
+    var wishlist=JSON.parse(localStorage.getItem("wish")) || [];
+
+    var sort=document.querySelector(".lth").addEventListener("click",lowtohigh);
+
+    
+
+    function lowtohigh(){
+        document.querySelector(".cwn").innerHTML="";
+        var a=0;
+        while(a<m.length){
+        for(var i=0;i<m.length-1;i++){
+            var math=+m[i].price;
+            var math1=+m[i+1].price;
+
+            if(math>math1){
+                [m[i],m[i+1]]=[m[i+1],m[i]]
+            }
+        }
+            a++;
+    }
+    
+    var l=m.map(function(ele){
+var main=document.createElement("div")
+main.setAttribute("class","wncimg")
+
+var bname=document.createElement("p")
+bname.setAttribute("class","pname")
+bname.textContent=ele.name;
+
+
+var bcat=document.createElement("p")
+bcat.setAttribute("class","pcat")
+bcat.textContent=ele.type;
+
+var dprice=document.createElement("div");
+dprice.setAttribute("class","dprice")
+dprice.textContent=ele.discount;
+
+var aprice=document.createElement("div");
+aprice.setAttribute("class","pprice")
+
+
+var rsym=document.createElement("span");
+rsym.setAttribute("class","myprice");
+
+rsym.textContent="$";
+
+var actualprice=ele.price;
+
+var fsym=document.createElement("span");
+fsym.setAttribute("class","mywish");
+
+fsym.textContent="love"
+
+fsym.addEventListener("click",function(){
+    wishlist.push(ele)
+    localStorage.setItem("wish",JSON.stringify(wishlist));
+})
+
+
+var button=document.createElement("button");
+button.setAttribute("class","addproduct");
+button.textContent="Add To Cart"
+
+button.addEventListener("click",function(){
+  addcart(ele)
+})
+
+var image=document.createElement("img");
+image.setAttribute("src",ele.image)
+
+
+main.append(image,bname,bcat,dprice)
+
+
+aprice.append(rsym,actualprice,fsym)
+
+main.append(aprice,button)
+
+document.querySelector(".cwn").append(main)
+
+
+})
+
+function addcart(ele){
+  alert("Item added to cart")
+   cartitems.push(ele)
+   localStorage.setItem("cart",JSON.stringify(cartitems))
+  
+
+}
+}
+    
+
+      document.querySelector(".htl").addEventListener("click",high);
+
+
+      function high(){
+          document.querySelector(".cwn").innerHTML="";
+        var a=0;
+        while(a<m.length){
+        for(var i=0;i<m.length-1;i++){
+            var math=+m[i].price;
+            var math1=+m[i+1].price;
+
+            if(math<math1){
+                [m[i],m[i+1]]=[m[i+1],m[i]]
+            }
+        }
+            a++;
+    }
+    
+    var l=m.map(function(ele){
+var main=document.createElement("div")
+main.setAttribute("class","wncimg")
+
+var bname=document.createElement("p")
+bname.setAttribute("class","pname")
+bname.textContent=ele.name;
+
+
+var bcat=document.createElement("p")
+bcat.setAttribute("class","pcat")
+bcat.textContent=ele.type;
+
+var dprice=document.createElement("div");
+dprice.setAttribute("class","dprice")
+dprice.textContent=ele.discount;
+
+var aprice=document.createElement("div");
+aprice.setAttribute("class","pprice")
+
+
+var rsym=document.createElement("span");
+rsym.setAttribute("class","myprice");
+
+rsym.textContent="$";
+
+var actualprice=ele.price;
+
+var fsym=document.createElement("span");
+fsym.setAttribute("class","mywish");
+
+fsym.textContent="love"
+
+fsym.addEventListener("click",function(){
+    wishlist.push(ele)
+    localStorage.setItem("wish",JSON.stringify(wishlist));
+})
+
+
+var button=document.createElement("button");
+button.setAttribute("class","addproduct");
+button.textContent="Add To Cart"
+
+button.addEventListener("click",function(){
+  addcart(ele)
+})
+
+var image=document.createElement("img");
+image.setAttribute("src",ele.image)
+
+
+main.append(image,bname,bcat,dprice)
+
+
+aprice.append(rsym,actualprice,fsym)
+
+main.append(aprice,button)
+
+document.querySelector(".cwn").append(main)
+
+
+})
+
+function addcart(ele){
+  alert("Item added to cart")
+   cartitems.push(ele)
+   localStorage.setItem("cart",JSON.stringify(cartitems))
+  
+
+}
+      }
+   
+
+      document.querySelector("#non").addEventListener("click",original);
+
+
+  function original(){
+   window.location.href="men.html"
+
+}
+
+
+
+  
+
+        m.map(function(ele){
+
+   
+
+         var main=document.createElement("div")
+         main.setAttribute("class","wncimg")
+
+         var bname=document.createElement("p")
+         bname.setAttribute("class","pname")
+         bname.textContent=ele.name;
+
+
+         var bcat=document.createElement("p")
+         bcat.setAttribute("class","pcat")
+         bcat.textContent=ele.type;
+
+         var dprice=document.createElement("div");
+         dprice.setAttribute("class","dprice")
+         dprice.textContent=ele.discount;
+
+         var aprice=document.createElement("div");
+         aprice.setAttribute("class","pprice")
+       
+
+         var rsym=document.createElement("span");
+         rsym.setAttribute("class","myprice");
+
+         rsym.textContent="$";
+
+         var actualprice=ele.price;
+
+         var fsym=document.createElement("span");
+         fsym.setAttribute("class","mywish");
+
+         fsym.textContent="love"
+
+         fsym.addEventListener("click",function(){
+             wishlist.push(ele)
+             localStorage.setItem("wish",JSON.stringify(wishlist));
+         })
+
+        
+        var button=document.createElement("button");
+        button.setAttribute("class","addproduct");
+       
+        button.textContent="Add To Cart"
+
+        button.addEventListener("click",function(){
+           addcart(ele)
+        })
+
+        var image=document.createElement("img");
+        image.setAttribute("src",ele.image)
+
+
+         main.append(image,bname,bcat,dprice)
+
+
+         aprice.append(rsym,actualprice,fsym)
+
+         main.append(aprice,button)
+
+         document.querySelector(".cwn").append(main)
+
+        })
+
+       function addcart(ele){
+           alert("Item added to cart")
+            cartitems.push(ele)
+            localStorage.setItem("cart",JSON.stringify(cartitems))
+       }
+    
+       
+
+       var lol=JSON.parse(localStorage.getItem("cart"))
+
+var bc=document.querySelector(".bc").textContent=lol.length;
+   
+
+
+
+</script>

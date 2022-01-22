@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            height:35px;
+            background-color: #FAF9F9;
+        }
+        .rotate{
+            transform: rotate(270deg);
+            margin-left:35%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .area{
+            display: flex;
+            width:4%;
+            margin-left:12%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .ate{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px;
+        }
+        .lan{
+            display: flex;
+            width:3%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .rotate1{
+            transform: rotate(270deg);
+            margin-left:45%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .lte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cur{
+            display: flex;
+            width:4%;
+            margin-left:0.4%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .csy{
+            margin-top: 0.1em;
+            font-weight: bold;
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .rotate2{
+            transform: rotate(270deg);
+            margin-left:30%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .fde{
+            font-family: sans-serif;
+            font-size: 11px;
+            margin-left: 15%;
+            margin-top: -0.2em;
+            cursor: pointer;
+            width:19%;
+        }
+        .sign{
+            display: flex;
+            width:9%;
+            margin-left: 15.3%;
+            margin-top: -0.3em;
+            cursor: pointer;
+        }
+        .sign>p{
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .rotate3{
+            transform: rotate(270deg);
+            margin-left:10%;
+            font-size: 13px;
+            margin-top: 0.4em;
+        }
+        .wish{
+            margin-left: 0.5%;
+            width:2%;
+        }
+        .lov{
+            color: rgb(252,177,138);
+            font-size: 25px;
+            margin-top: -0.2em;
+        }
+        :hover.lov{
+            font-size: 29px;
+            cursor: pointer;    
+        }
+        .bag{
+            display: flex;
+            margin-left: 1%;
+            font-size: 21px;
+            width:2%;
+        }
+        :hover.bag{
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bc{
+            margin-left: -0.3em;
+            color: rgb(182, 177, 177);
+            font-family: sans-serif;
+            margin-top: 0.3em;
+        }
+        .head{
+            width:100%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 1.7%;
+            /* position: fixed; */
+        }
+        .ihead{
+           width:13.8%;
+           height: auto;
+           color: black;
+       }
+        .select{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 12.2px;
+            margin-left: 19%;
+            margin-top: 1%;
+            height: 32px
+        }
+       .wn{
+           width:9%;
+           /* text-align: center; */
+       }
+       .of{
+            width:10%;
+           text-align: center;
+       }
+       .ds{
+           width:11%;
+           text-align: center;
+       }
+       .cl{
+           width:6%;
+           text-align: center;
+       }
+       .act{
+           width:8%;
+           text-align: center;
+       }
+       .sho{
+           width:4.5%;
+           text-align: center;
+       }
+       .bgs{
+           width:6%;
+           text-align: center;
+       }
+       .accs{
+           width:10%;
+           text-align: center;
+       }
+       .mn{
+           width:4.7%;
+           text-align: center;
+       }
+       .sl{
+           width:3.2%;
+           text-align: center;
+       }
+       .ser{
+           font-size: small;
+           color: rgb(92, 89, 89);
+           font-weight: 100 ;
+           margin-top: 0.8em;
+           margin-left: 1.2em;
+       }
+       .select>div:hover{
+          cursor: pointer;
+           font-weight:bold;
+           font-size: 12.5px;
+           color: black;
+            transition: all 0.2s ease-out ;
+       }
+       .hov{
+        visibility: hidden;
+           width:80%;
+           margin-left: 10%;
+           height: 0.1em;
+           background-color:orangered;
+           margin-top:-1em;
+       }
+
+
+
+
+
+
+       .bimg{
+          width:103%;
+          height: 600px;
+          overflow: hidden;
+          background-image: url("https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/lookbooks/2022/2022_01/sb_20220115_desktop_LB_paige_02_1-0.jpg");
+          margin-top: 0.7em;
+          /* background-size: 150px; */
+          background-size: 100%;
+          background-position-y:-5em;
+          margin-left: -0.5em;
+       }
+       .himg1{  
+           width:25%;
+           height: 78.8%;
+           border:14px solid white;
+           margin-top: 6%;
+           margin-left: 5.6%;
+           transform: rotate(359.5deg);
+           background-image: url("https://images.pexels.com/photos/965324/pexels-photo-965324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+           transition: 3s;
+
+
+           /* animation-name: image;
+           animation-duration:1s;
+           animation-play-state: running;
+           animation-timing-function: ease-in-out;
+           animation-fill-mode: forwards;
+           animation-iteration-count: infinite;
+           animation-direction: alternate-reverse; */
+
+       }
+       /* @keyframes image{
+           0%{
+               background-image: url("https://www.pexels.com/photo/women-s-white-and-black-striped-dress-shirt-1844012/");
+           }
+           20%{
+               background-image: url("https://www.pexels.com/photo/woman-holding-her-hat-while-holding-her-camera-2085118/");
+           }
+           30%{
+               background-image: url("https://www.pexels.com/photo/woman-wearing-green-fur-jacket-1040173/");
+           }
+           50%{
+               background-image: url("https://www.pexels.com/photo/woman-in-maroon-buttoned-coat-wearing-black-hat-952629/");
+           }
+           100%{
+               background-image: url("https://www.pexels.com/photo/photo-of-a-woman-wearing-gingham-dress-859192/");
+           }
+       } */
+       /* .ihimg1{
+        width: 100%;
+        height: 100%;
+       }    */
+       .ihtext{
+           width:21%;
+           margin-left: 38%;
+           margin-top: -28%;
+           text-align: center;
+       }    
+       .ihtext>p{
+           font-weight: bold;
+           font-family: sans-serif;
+       }
+       .ihtext>h1{
+           font-weight:800;
+           font-family: sans-serif;
+           font-size: 45px;
+           margin-top: -0.35em;
+       }
+       #ihp1{
+        line-height: 27px;
+        font-weight: 100;
+        font-size: 17px;
+        margin-top: -1em;
+        font-family: sans-serif;
+       }
+       .ihbotton{
+           border:0;
+           text-align: center;
+           width:65%;
+           height: 52px;
+           font-weight: bold;
+           color: white;
+           background-color: orangered;
+           font-family: sans-serif;
+       }
+       :hover.ihbotton{
+           background-color: rgb(252, 127, 82);
+       }
+       
+
+       .additem{
+           position: relative;
+           /* margin-left: -90%;
+           font-size: 16px; */
+           border: 3px solid rgb(172, 78, 78);
+          
+       }
+       .additem:hover .addibut{
+        visibility: visible;
+    }
+       
+
+    /* .addibut>p:hover{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;  
+        cursor: pointer;  
+    }
+       .addibut{
+           visibility: hidden;
+       } */
+       .addpofix{
+           visibility: hidden;
+           position: fixed;
+           width:60%;
+           height:500px;
+           margin-left:20%;
+           margin-top: -2%;
+           border: 6px solid rgb(240, 80, 80);
+           background-color: rgb(155, 149, 149);
+       }
+       .left11{
+           margin-left: 40%;
+           font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+<div class="nav">
+<div class="area">
+    <i style="font-size:20px;" class="fa" >&#xf041;</i>
+    <div class="ate">IN</div>
+    <div class="rotate">&#10094;</div>
+</div>
+<div class="lan">
+   <div class="lte">
+    EN
+   </div>
+   <div class="rotate1">&#10094;</div>
+</div>
+<div class="cur">
+    <div class="csy">
+        &#8377;
+    </div>
+<div class="cte">INR</div>
+<div class="rotate2">&#10094;</div>
+</div>
+<div class="fde">
+   <p>FREE express intenational deliver + EASY returns</p>
+</div>
+<div class="sign" onclick="window.location.href='login.html'">
+<p>Sign In / Register</p>
+<div class="rotate3">&#10094;</div>
+</div>
+<div class="wish">
+<div class="lov">
+    &#10084;
+</div>
+</div>
+<div class="bag">
+    <i class="fas fa-shopping-bag"></i>
+</div>
+<div class="bc">
+    0
+</div>
+</div>
+<div class="head">
+    <div class="additem">
+       add
+        </div>
+    <img class="ihead" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop">
+</div>
+
+<div class="addpofix">
+    <div class="left11">
+   <p class="bname">brand name</p>
+   <input type="text" id="brand">
+   <p class="catry">catogory</p>
+   <input type="text" id="cat">
+   <div class="disp">discount price</div>
+   <input type="number" id="dprice">
+   <div class="acpri">actual price</div>
+   <input type="text" id="aprice">
+   <div class="image11">image</div> 
+   <input type="text" id="image">
+   <button id="additem">ADDITEMS</button>
+   <select   id="addibut">
+    <option value="men">men</option>
+    <option value="bags">bags</option>
+    <option value="active">active</option>
+    <option value="clothing">clothing</option>
+    <option value="shoes">shoes</option>
+    <option value="favorites">favorites</option>
+  </select>
+    </div>
+</div>
+
+<div class="select">
+    <div class="wn" onclick="window.location.href='whatsnew.html'"> 
+        <p>WHAT'S NEW</p>
+        <div class="hov"></div>
+    </div>
+    <div class="of" onclick="window.location.href='ourfavorite.html'">
+        <p>OUR FAVORITES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="ds" onclick="window.location.href='whatsnew.html'">
+        <p>DESIGNERS</p>
+        <div class="hov"></div>
+    </div>
+    <div class="cl" onclick="window.location.href='clothing.html'">
+        <p>CLOTHING</p>
+        <div class="hov"></div>
+    </div>
+    <div class="act" onclick="window.location.href='active.html'">
+        <p>ACTIVE</p>
+        <div class="hov"></div>
+    </div>
+    <div class="sho" onclick="window.location.href='shoes.html'">
+        <p>SHOES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="bgs" onclick="window.location.href='bags.html'">
+        <p>BAGS</p>
+        <div class="hov"></div>
+    </div>
+    <div class="accs" onclick="window.location.href='whatsnew.html'">
+        <p>ACCESSORIES</p>
+        <div class="hov"></div>
+    </div>
+    <div class="mn" onclick="window.location.href='men.html'">
+        <p>MEN</p>
+        <div class="hov"></div>
+    </div>
+    <div class="sl">
+        <P>SALE</P>
+        <div class="hov"></div>
+    </div>
+    <div class="ser">
+        <i class="fas fa-search"></i>
+    </div>
+</div>
+
+
+
+
+<div class="bimg">
+    <div class="himg1">
+     <!-- <img class="ihimg1" src="" alt=""> -->
+    </div>
+    <div class="ihtext">
+     <p>THE LATEST FROM</p>
+     <h1>PAIGE</h1>
+     <p id="ihp1">Cozy swteater, stand out jumpsuits & of course, the label's fan-favorite jeans.</p>
+     <button class="ihbotton">Explore the story</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+ var a=document.querySelector(".additem").addEventListener("click",visis)
+    function visis(event){
+        event.preventDefault();
+        document.querySelector(".addpofix").style.visibility="visible"
+    }
+    var a=document.querySelector(".additem").addEventListener("dblclick",divisi)
+    function divisi(){
+        document.querySelector(".addpofix").style.visibility="hidden"
+    }
+
+
+
+document.querySelector("#additem").addEventListener("click",addingtheitems)
+
+var men= JSON.parse(localStorage.getItem("menitems"))   || [];
+
+var bags=JSON.parse(localStorage.getItem("bagitems"))   || []; 
+
+var active=JSON.parse(localStorage.getItem("activeitems"))   || []; 
+
+var clothing=JSON.parse(localStorage.getItem("clothingiteitems")) || [];
+
+var shoes=JSON.parse(localStorage.getItem("shoesitems"))   || [];
+
+var active=JSON.parse(localStorage.getItem("activeitems"))   || []; 
+
+var favorites=JSON.parse(localStorage.getItem("favoriteitems"))   || []; 
+
+var whatsnew=JSON.parse(localStorage.getItem("items"))   || [];
+
+var add=document.querySelector(".additem").textContent;
+function addingtheitems(event){
+    event.preventDefault()
+    var part=document.querySelector("#addibut").value;
+    var imagelink=document.querySelector("#image").value    ;
+    var brandname=document.querySelector("#brand").value;
+    var catogory=document.querySelector("#cat").value;
+    var dprice=document.querySelector("#dprice").value;
+    var aprice=document.querySelector("#aprice").value;
+
+    var obj={image:imagelink,name:brandname,type:catogory,discount:dprice,price:aprice}
+
+    if(part=="men"){
+        men.push(obj)
+    }
+    
+    else if(part=="bags"){
+        bags.push(obj)
+    }
+    else if(part=="active"){
+        active.push(obj)
+    }
+    else if(part=="clothing"){
+        clothing.push(obj)
+    }
+    else if(part=="shoes"){
+        shoes.push(obj)
+    }
+    else if(part=="favorites"){
+        favorites.push(obj)
+    }
+    
+    
+    whatsnew.push(obj);  
+
+    // document.querySelector("#additem").style.backgroundColor="oranged"
+    localStorage.setItem("items",JSON.stringify(whatsnew));
+    localStorage.setItem("menitems",JSON.stringify(men));
+    localStorage.setItem("bagitems",JSON.stringify(bags));
+    localStorage.setItem("activeitems",JSON.stringify(active));
+    localStorage.setItem("clothingitems",JSON.stringify(clothing));
+    localStorage.setItem("shoesitems",JSON.stringify(shoes));
+    localStorage.setItem("favoriteitems",JSON.stringify(favorites));
+
+}
+
+
+
+
+
+
+
+function me(){
+
+    document.querySelector(".change").textContent="MEN"
+      var part=document.querySelector(".change").textContent;
+}
+function acc(){
+
+    document.querySelector(".change").textContent="ACCESSORIES"
+}
+function bag(){
+
+    document.querySelector(".change").textContent="BAGS"
+}
+function sho(){
+
+    document.querySelector(".change").textContent="SHOES"
+}
+function act(){
+
+    document.querySelector(".change").textContent="ACTIVE"
+}
+function clo(){
+
+    document.querySelector(".change").textContent="CLOTHING"
+}
+function ofav(){
+
+    document.querySelector(".change").textContent="OURFAVORITE"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

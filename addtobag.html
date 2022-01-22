@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            height:35px;
+            background-color: #FAF9F9;
+        }
+        .rotate{
+            transform: rotate(270deg);
+            margin-left:35%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .area{
+            display: flex;
+            width:4%;
+            margin-left:12%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .ate{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px;
+        }
+        .lan{
+            display: flex;
+            width:3%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .rotate1{
+            transform: rotate(270deg);
+            margin-left:45%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .lte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .cur{
+            display: flex;
+            width:4%;
+            margin-left:0.4%;
+            color:rgb(48, 46, 46);
+            cursor:pointer;
+        }
+        .csy{
+            margin-top: 0.1em;
+            font-weight: bold;
+        }
+        .cte{
+            margin-left: 7%;
+            margin-top: 3px;
+            font-family: sans-serif;
+            font-size:14px; 
+        }
+        .rotate2{
+            transform: rotate(270deg);
+            margin-left:30%;
+            font-size: 13px;
+            margin-top: -0.51em;
+        }
+        .fde{
+            font-family: sans-serif;
+            font-size: 11px;
+            margin-left: 15%;
+            margin-top: -0.2em;
+            cursor: pointer;
+            width:19%;
+        }
+        .sign{
+            display: flex;
+            width:9%;
+            margin-left: 15.3%;
+            margin-top: -0.3em;
+            cursor: pointer;
+        }
+        .sign>p{
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .rotate3{
+            transform: rotate(270deg);
+            margin-left:10%;
+            font-size: 13px;
+            margin-top: 0.4em;
+        }
+        .wish{
+            margin-left: 0.5%;
+            width:2%;
+        }
+        .lov{
+            color: rgb(252,177,138);
+            font-size: 25px;
+            margin-top: -0.2em;
+        }
+        :hover.lov{
+            font-size: 29px;
+            cursor: pointer;    
+        }
+        .bag{
+            display: flex;
+            margin-left: 1%;
+            font-size: 21px;
+            width:2%;
+        }
+        :hover.bag{
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .bc{
+            margin-left: -0.3em;
+            color: rgb(182, 177, 177);
+            font-family: sans-serif;
+            margin-top: 0.3em;
+        }
+        .head{
+            width:100%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 1.7%;
+            /* position: fixed; */
+        }
+        .ihead{
+           width:13.8%;
+           height: auto;
+           color: black;
+       }
+        .select{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 12.2px;
+            margin-left: 19%;
+            margin-top: 1%;
+            height: 32px
+        }
+       .wn{
+           width:9%;
+           /* text-align: center; */
+       }
+       .of{
+            width:10%;
+           text-align: center;
+       }
+       .ds{
+           width:11%;
+           text-align: center;
+       }
+       .cl{
+           width:6%;
+           text-align: center;
+       }
+       .act{
+           width:8%;
+           text-align: center;
+       }
+       .sho{
+           width:4.5%;
+           text-align: center;
+       }
+       .bgs{
+           width:6%;
+           text-align: center;
+       }
+       .accs{
+           width:10%;
+           text-align: center;
+       }
+       .mn{
+           width:4.7%;
+           text-align: center;
+       }
+       .sl{
+           width:3.2%;
+           text-align: center;
+       }
+       .ser{
+           font-size: small;
+           color: rgb(92, 89, 89);
+           font-weight: 100 ;
+           margin-top: 0.8em;
+           margin-left: 1.2em;
+       }
+       .select>div:hover{
+          cursor: pointer;
+           font-weight:bold;
+           font-size: 12.5px;
+           color: black;
+            transition: all 0.2s ease-out ;
+       }
+       .hov{
+        visibility: hidden;
+           width:80%;
+           margin-left: 10%;
+           height: 0.1em;
+           background-color:orangered;
+           margin-top:-1em;
+       }
+
+
+
+
+
+
+
+
+       .headwn{
+           width:79%;
+           margin-left: 12%;
+           font-family: sans-serif;
+           
+       }
+       .empty{
+            width:100%;
+            height:1px;
+            background-color: rgb(8, 7, 7);
+            margin-top: -0.4em;
+       }
+
+
+
+       .cwn{
+           width: 77%;
+           /* margin-left:23%; */
+           height: 360px;
+           /* overflow:auto; */
+           margin-top: 1%;
+           display: flex;
+           /* border: 1px solid black; */
+           
+       }
+       .cwn>img{
+           width:205px;
+           height:360px
+       }
+
+       .wncimg{
+           /* border:1px solid black; */
+           height: 360px;;
+           width:100%;
+           background-color: rgb(236, 208, 232);
+       }
+       .pname{
+           font-size: 12.5px;
+           font-family: sans-serif;
+           font-weight: bold;
+           /* margin-left: 200px; */
+           /* width:90%; */
+           height:15px;
+           text-align: center;
+           overflow: hidden;
+       }
+       .pcat{
+           /* width:90%; */
+           height:15px;
+           overflow: hidden;
+           color: rgb(110, 108, 108);
+           font-family: sans-serif;
+           font-size: 12px;
+           text-align: center;
+           /* margin-top: 0em;
+           margin-left: 200px; */
+       }
+       .dprice{
+           /* width:90%; */
+           height: 14px;;
+           /* margin-top: -0.8em; */
+           text-align: center;
+           text-decoration: line-through;
+           color: red;
+           /* margin-left: 200px; */
+           cursor: pointer;
+       }
+      .pprice{
+          display: flex;
+          /* width: 90%; */
+          text-align: center;
+          cursor: pointer;
+          position: relative;
+          margin-left: -400px;
+          margin-top: 7em; 
+          /* border: 1px solid black; */
+          height: 18px;
+      }
+      .mywish{
+          margin-left: 20%;
+          cursor: pointer;
+          border: 1px solid pink;
+          background-color: plum;
+          
+      }
+      .myprice{
+          margin-left:30%;
+          cursor: pointer;
+          margin-top: -0.05em;
+          margin-left: 1em;
+      }
+      .addproduct{
+          /* width:91%;
+          margin-top: 4em;
+          background-color: orangered;
+          color: white;
+          border: 0;
+          position: relative;
+          width:40%;
+          width:400px;
+          height: 50px;
+          cursor: pointer;
+          border: 1px solid black;
+          margin-left: 45%; */
+          width:200px;;
+          height: 45px;
+          margin-top: 25%;
+          margin-left: -9em;
+          border: 0.1px;;
+          background-color: orangered;
+          color: white;
+      }
+      
+    .checkout{
+        width:68%;
+        height:200px;
+        /* border:1px solid black; */
+        margin-left:18%;
+    }
+    .pricebox{
+        width:150px;
+        height:50px;
+        text-align: center;
+        border: 5px solid orangered;
+        position: relative;top:-0.5em;
+    }
+    .total{
+        display: flex;
+        margin-top: 2em;
+        font-size: 26px;
+    }
+    #applydis{
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: 10%;
+        margin-top: -1em;
+    }
+    .applyinput{
+        width:350px;
+        margin-left: -17em;
+        margin-top: 1em;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    .checkbox{
+        width:150px;
+        height: 43px;
+        background-color: orangered;
+        color: white;
+        position: relative;top:0.65em; 
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .gotocart{
+        width:150px;
+        height: 43px;
+        background-color: green;
+        color: white;
+        margin-left: 40%;
+        margin-top: 0.6em;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        line-height: -6px;
+        /* position: relative;top:0.65em;  */
+    }
+    .scroll{
+        height:800px;
+        overflow: auto;
+        /* border: 1px solid black; */
+        width:68%;
+        margin-left: 23%;
+    }
+    .clearall{
+        width:100px;
+        height:45px;
+        margin-left: 30%;
+        background-color: orangered;
+        color: white;
+        font-size: 19px;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="area">
+            <i style="font-size:20px;" class="fa" >&#xf041;</i>
+            <div class="ate">IN</div>
+            <div class="rotate">&#10094;</div>
+        </div>
+        <div class="lan">
+           <div class="lte">
+            EN
+           </div>
+           <div class="rotate1">&#10094;</div>
+        </div>
+        <div class="cur">
+            <div class="csy">
+                &#8377;
+            </div>
+        <div class="cte">INR</div>
+        <div class="rotate2">&#10094;</div>
+        </div>
+        <div class="fde">
+           <p>FREE express intenational deliver + EASY returns</p>
+        </div>
+        <div class="sign" onclick="window.location.href='login.html'">
+        <p>Sign In / Register</p>
+        <div class="rotate3">&#10094;</div>
+        </div>
+        <div class="wish">
+        <div class="lov">
+            &#10084;
+        </div>
+        </div>
+        <div class="bag">
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+        <p class="bc">0</p>
+        </div>
+        <div class="head">
+            <img class="ihead" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop">
+        </div>
+        <div class="select">
+            <div class="wn" onclick="window.location.href='whatsnew.html'"> 
+                <p>WHAT'S NEW</p>
+                <div class="hov"></div>
+            </div>
+            <div class="of" onclick="window.location.href='ourfavorite.html'">
+                <p>OUR FAVORITES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="ds" onclick="window.location.href='whatsnew.html'">
+                <p>DESIGNERS</p>
+                <div class="hov"></div>
+            </div>
+            <div class="cl" onclick="window.location.href='clothing.html'">
+                <p>CLOTHING</p>
+                <div class="hov"></div>
+            </div>
+            <div class="act" onclick="window.location.href='active.html'">
+                <p>ACTIVE</p>
+                <div class="hov"></div>
+            </div>
+            <div class="sho" onclick="window.location.href='shoes.html'">
+                <p>SHOES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="bgs" onclick="window.location.href='bags.html'">
+                <p>BAGS</p>
+                <div class="hov"></div>
+            </div>
+            <div class="accs" onclick="window.location.href='whatsnew.html'">
+                <p>ACCESSORIES</p>
+                <div class="hov"></div>
+            </div>
+            <div class="mn" onclick="window.location.href='men.html'">
+                <p>MEN</p>
+                <div class="hov"></div>
+            </div>
+            <div class="sl">
+                <P>SALE</P>
+                <div class="hov"></div>
+            </div>
+            <div class="ser">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        
+        
+
+        <div class="headwn">
+            <h3>Check The Items Before Gone The Checkout Page </h3>
+            <div class="empty"></div>
+        </div>
+        <div class="scroll">
+        <!-- <div class="cwn">
+            <img src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/staud/staud3109329563/staud3109329563_1642114246123_2-0._SH20_QL90_UY365_.jpg" alt="">
+            <div class="wncimg">
+                <p class="pname">STAUD</p>
+                <p class="pcat">Mini Milla Dress</p>
+                <div class="dprice"></div>
+                <div class="pprice"><span class="myprice">&#8377;</span>6464565<span class="mywish"> &#10084;</span></div>
+                <button class="addproduct">Add To Cart</button>
+            </div> -->
+        </div>
+       
+       
+    </div>
+        
+
+        <div class="checkout">
+            <div class="total">
+                Total=<div class="pricebox"></div>
+                <p id="applydis">Apply Discount Coupen If U Have</p>
+                <input type="text" class="applyinput">
+                <div class="checkbox">check</div>
+            </div>
+         
+            <div class="gotocart" onclick="window.location.href='cart.html'">Check out</div>
+            
+    </div>
+    <div class="clear">
+        <button class="clearall">clearall</button>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var count=0
+var m=JSON.parse(localStorage.getItem("cart"));
+for(var i=0;i<m.length;i++){
+// console.log(ele)
+var l=+m[i].price;
+console.log(l)
+count=count+l;
+var bname=document.createElement("p")
+bname.setAttribute("class","pname")
+bname.textContent=m[i].name;
+
+var bcat=document.createElement("p")
+bcat.setAttribute("class","pcat")
+bcat.textContent=m[i].type;
+
+var dprice=document.createElement("div");
+dprice.setAttribute("class","dprice")
+dprice.textContent=m[i].discount;
+
+var sub=document.createElement("div")
+sub.setAttribute("class","wncimg")
+
+
+sub.append(bname,bcat,dprice)
+
+var aprice=document.createElement("div");
+aprice.setAttribute("class","pprice")
+
+var dollar=document.createElement("p");
+dollar.setAttribute("class","myprice")
+dollar.textContent="$";
+
+var price=m[i].price;
+
+var love=document.createElement("span");
+love.setAttribute("class","mywish");
+love.textContent="love";
+
+
+
+var button=document.createElement("button");
+button.setAttribute("class","addproduct");
+button.textContent="Delete From Cart"
+
+button.addEventListener("click",function(){
+    event.target.parentNode.remove();
+})
+
+
+
+aprice.append(dollar,price,love);
+
+var cwn=document.createElement("div");
+cwn.setAttribute("class","cwn")
+
+var image=document.createElement("img");
+image.setAttribute("src",m[i].image);
+
+cwn.append(image,sub,aprice,button)
+
+
+document.querySelector(".scroll").append(cwn)
+
+
+};
+
+var o=document.querySelector(".pricebox").textContent=count;
+
+document.querySelector(".checkbox").addEventListener("click",disprice)
+
+function disprice(){
+    var p=document.querySelector(".applyinput").value;
+
+    if(p=="MASAI50"){
+       o=document.querySelector(".pricebox").textContent=(count/2); 
+       console.log(o)
+    }
+}
+// function remove(ele){
+//   m.splice(ele,1)
+// }
+//     // var asalu=document.createElement("div");
+//     // asalu.setAttribute("class","cwn")
+   
+// // var main=document.createElement("div");
+// // main.setAttribute("class","cwn");
+
+// var image=document.createElement("img");
+// image.setAttribute("src",ele.image)
+
+document.querySelector(".clearall").addEventListener("click",clearall);
+
+function clearall(){
+    var j=[];
+    localStorage.setItem("cart",JSON.stringify(j))
+    window.location.href="addtobag.html"
+}
+
+
+
+
+
+// var aprice=document.createElement("div");
+// aprice.setAttribute("class","pprice")
+
+
+// var rsym=document.createElement("span");
+// rsym.setAttribute("class","myprice");
+
+// rsym.textContent="$";
+
+// var actualprice=ele.price;
+
+// var fsym=document.createElement("span");
+// fsym.setAttribute("class","mywish");
+
+// fsym.textContent="love"
+
+// var button=document.createElement("button");
+
+// button.textContent="Dlete Item From Bag";
+
+// sub.append(bname,bcat,dprice,aprice,button)
+// document.querySelector(".cwn").append(image,bname)
+// });
+
+var lol=JSON.parse(localStorage.getItem("cart"))
+
+  var bc=document.querySelector(".bc").textContent=lol.length;
+</script>
