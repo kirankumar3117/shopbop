@@ -133,33 +133,3 @@ mail: ch.kirankumar311@gmail.com
 password: 7396192829;
 our admin page will look like this .
 </pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
-<br/>
-<pre></pre>
-<br/>
-<img src=""/>
